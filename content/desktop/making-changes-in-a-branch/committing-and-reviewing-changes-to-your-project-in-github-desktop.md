@@ -7,7 +7,9 @@ redirect_from:
   - /desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project
   - /desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project-in-github-desktop
 versions:
-  feature: desktop
+  fpt: '*'
+  ghec: '*'
+  ghes: '*'
 shortTitle: Commit & review changes
 ---
 ## About commits
@@ -16,15 +18,11 @@ shortTitle: Commit & review changes
 
 {% data reusables.desktop.update-email-address %} For more information, see [AUTOTITLE](/desktop/configuring-and-customizing-github-desktop/configuring-git-for-github-desktop).
 
-{% ifversion repo-rules %}
-
 Repository administrators can enable rulesets for a branch to enforce specific conventions when committing. For example, a ruleset can require a commit to be signed, or for an issue number to be referenced at the start of a commit message. {% data variables.product.prodname_desktop %} will display a warning and prevent committing if a commit does not follow the rulesets. For more information, see [AUTOTITLE](/enterprise-cloud@latest/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets).
-
-{% endif %}
 
 ## Choosing a branch and making changes
 
-1. [Create a new branch](/desktop/making-changes-in-a-branch/managing-branches-in-github-desktop), or select an existing branch by clicking **{% octicon "git-branch" aria-hidden="true" %} Current Branch** on the toolbar and selecting the branch from the list.
+1. [Create a new branch](/desktop/making-changes-in-a-branch/managing-branches-in-github-desktop), or select an existing branch by clicking **{% octicon "git-branch" aria-hidden="true" aria-label="git-branch" %} Current Branch** on the toolbar and selecting the branch from the list.
 
    ![Screenshot of the "Current Branch" dropdown view. Under "Recent Branches", a branch, named "my-feature", is highlighted with an orange outline.](/assets/images/help/desktop/select-branch-from-dropdown.png)
 {% data reusables.desktop.make-changes %}
@@ -101,14 +99,17 @@ To discard a group of changed lines, right-click the vertical bar to the right o
 
 ## Write a commit message and push your changes
 
-Once you're satisfied with the changes you've chosen to include in your commit, write your commit message and push your changes. If you've collaborated on a commit, you can also attribute a commit to more than one author.
+Once you're satisfied with the changes you've chosen to include in your commit, you need to describe your commit and push your changes. If you've collaborated on a commit, you can also attribute a commit to more than one author.
 
 > [!NOTE]
 > {% data reusables.desktop.tags-push-with-commits %} For more information, see [AUTOTITLE](/desktop/managing-commits/managing-tags-in-github-desktop).
 
-{% data reusables.desktop.commit-message %}
+1. At the bottom of the list of changes, next to your profile picture, describe your commit:
+   * If you have access to {% data variables.product.prodname_copilot %} and you are using [{% data variables.product.prodname_desktop %} beta](https://desktop.github.com/beta/), you can automatically create a commit message and details based on the changes you made. Click {% octicon "copilot" aria-label="Generate commit message with Copilot" %}.
+   * Alternatively, type your own short, meaningful commit message in the Summary field. You can also add more information about the change in the Description field.
 
-   ![Screenshot of the "Changes" tab in the sidebar. To the right of a profile picture, a text field containing a commit message is outlined in orange.](/assets/images/help/desktop/commit-message.png)
+   ![Screenshot of the "Changes" tab. The "Summary" field and "Generate commit message with Copilot" button are outlined in orange.](/assets/images/help/desktop/create-commit-details.png)
+
 1. Optionally, to attribute a commit to another author, click the add co-authors icon and type the username(s) you want to include.
 
    ![Screenshot of the "Changes" tab. In the corner of the "Description" field, the icon for adding a co-author is outlined in orange.](/assets/images/help/desktop/add-co-author-commit.png)

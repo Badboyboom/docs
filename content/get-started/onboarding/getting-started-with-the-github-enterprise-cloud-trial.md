@@ -18,15 +18,15 @@ For full details of what is included in the trial, and what happens during, and 
 
 Go to the trial sign up page and follow the instructions on screen to sign up for the trial.
 
-<a href="https://github.com//account/enterprises/new?ref_cta=GHEC+trial&ref_loc=Getting+started+with+the+github+enterprise+cloud+trial&ref_page=docs" target="_blank" class="btn btn-primary mt-3 mr-3 no-underline"><span>Try {% data variables.product.prodname_ghe_cloud %}</span> {% octicon "link-external" height:16 %}</a>
+<a href="https://github.com//account/enterprises/new?ref_cta=GHEC+trial&ref_loc=Getting+started+with+the+github+enterprise+cloud+trial&ref_page=docs" target="_blank" class="btn btn-primary mt-3 mr-3 no-underline"><span>Try {% data variables.product.prodname_ghe_cloud %}</span> {% octicon "link-external" height:16 aria-label="link-external" %}</a>
 
 ## Part 2: Setting up {% data variables.product.prodname_ghe_cloud %}
 
 You can find full instructions on setting up {% data variables.product.prodname_ghe_cloud %} in the [AUTOTITLE](/enterprise-cloud@latest/get-started/onboarding/getting-started-with-github-enterprise-cloud) guide.
 
-## Part 3: Setting up {% data variables.product.prodname_GH_advanced_security %}
+## Part 3: Setting up {% data variables.product.prodname_GHAS %}
 
-You can find information about planning a trial of {% data variables.product.prodname_GH_advanced_security %} and exploring the additional options available with {% data variables.product.prodname_ghe_cloud %} in the [AUTOTITLE](/code-security/trialing-github-advanced-security) articles.
+You can find information about planning a trial of {% data variables.product.prodname_GHAS %} and exploring the additional options available with {% data variables.product.prodname_ghe_cloud %} in the [AUTOTITLE](/code-security/trialing-github-advanced-security) articles.
 
 ## Part 4: Setting up {% data variables.product.prodname_copilot_for_business %}
 

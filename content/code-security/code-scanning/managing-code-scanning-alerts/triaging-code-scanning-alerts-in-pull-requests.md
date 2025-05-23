@@ -15,7 +15,7 @@ versions:
   ghec: '*'
 type: how_to
 topics:
-  - Advanced Security
+  - Code Security
   - Code scanning
   - Pull requests
   - Alerts
@@ -145,7 +145,7 @@ Each {% data variables.product.prodname_copilot_autofix_short %} suggestion demo
 
     {% data reusables.rai.code-scanning.copilot-workspaces-prs-autofix-note %}
 
-1. Optionally, if you prefer to apply the fix on a local repository or branch, select the {% octicon "copy" aria-hidden="true" %} dropdown menu on the suggestion.
+1. Optionally, if you prefer to apply the fix on a local repository or branch, select the {% octicon "copy" aria-hidden="true" aria-label="copy" %} dropdown menu on the suggestion.
    * Select **View autofix patch** to display instructions for applying the suggested fix to any local repository or branch.
    * Select **Copy modified line LINE_NUMBER** to copy a specific line of the suggestion.
 1. Test and modify the suggested fix as needed.
@@ -169,3 +169,9 @@ An alternative way of closing an alert is to dismiss it. You can dismiss an aler
 {% data reusables.code-scanning.false-positive-fix-codeql %}
 
 For more information about dismissing alerts, see [AUTOTITLE](/code-security/code-scanning/managing-code-scanning-alerts/resolving-code-scanning-alerts#dismissing--alerts).
+
+## Further reading
+
+{%- ifversion copilot-hadron %}
+* [AUTOTITLE](/copilot/using-github-copilot/using-github-copilot-for-pull-requests/using-copilot-to-help-you-work-on-a-pull-request)
+{%- endif %}

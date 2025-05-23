@@ -91,8 +91,9 @@ const githubDocsConfig = {
   },
   'liquid-ifversion-versions': {
     // GHD022
-    severity: 'warning',
+    severity: 'error',
     'partial-markdown-files': true,
+    'yml-files': true,
   },
   'yaml-scheduled-jobs': {
     // GHD021
@@ -167,6 +168,12 @@ const githubDocsConfig = {
     'partial-markdown-files': true,
     'yml-files': true,
   },
+  'octicon-aria-labels': {
+    // GHD044
+    severity: 'warning',
+    'partial-markdown-files': true,
+    'yml-files': true,
+  },
 }
 
 export const githubDocsFrontmatterConfig = {
@@ -207,8 +214,9 @@ export const githubDocsFrontmatterConfig = {
   },
   'liquid-ifversion-versions': {
     // GHD022
-    severity: 'warning',
-    'partial-markdown-files': false,
+    severity: 'error',
+    'partial-markdown-files': true,
+    'yml-files': true,
   },
   'link-quotation': {
     // GHD043
@@ -261,15 +269,6 @@ export const searchReplaceConfig = {
         name: 'help-domain',
         message: 'Catch occurrences of help.github.com domain.',
         search: 'help.github.com',
-        searchScope: 'all',
-        severity: 'error',
-        'partial-markdown-files': true,
-        'yml-files': true,
-      },
-      {
-        name: 'preview-domain',
-        message: 'Catch occurrences of preview.ghdocs.com domain.',
-        search: 'preview.ghdocs.com',
         searchScope: 'all',
         severity: 'error',
         'partial-markdown-files': true,

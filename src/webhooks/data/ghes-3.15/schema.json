@@ -1208,7 +1208,7 @@
               "description": "<p>The ID of the exemption request.</p>"
             },
             {
-              "type": "integer",
+              "type": "integer or null",
               "name": "number",
               "description": "<p>The number uniquely identifying the exemption request within it's repository.</p>"
             },
@@ -1233,7 +1233,9 @@
               "description": "<p>The type of request.</p>",
               "enum": [
                 "push_ruleset_bypass",
-                "secret_scanning"
+                "secret_scanning",
+                "secret_scanning_closure",
+                "code_scanning_alert_dismissal"
               ]
             },
             {
@@ -1265,32 +1267,7 @@
             {
               "type": "object or null",
               "name": "metadata",
-              "description": "<p>Metadata about the exemption request.</p>",
-              "childParamsGroups": [
-                {
-                  "type": "object",
-                  "name": "Secret Scanning Push Protection Exemption Request Metadata",
-                  "description": "<p>Metadata for a secret scanning push protection exemption request.</p>",
-                  "childParamsGroups": [
-                    {
-                      "type": "string",
-                      "name": "label",
-                      "description": "<p>The label for the secret type</p>"
-                    },
-                    {
-                      "type": "string",
-                      "name": "reason",
-                      "description": "<p>The reason for the exemption request</p>",
-                      "enum": [
-                        "fixed_later",
-                        "false_positive",
-                        "tests"
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "oneOfObject": true
+              "description": "<p>Metadata about the exemption request.</p>"
             },
             {
               "type": "string",
@@ -1424,7 +1401,7 @@
               "description": "<p>The ID of the exemption request.</p>"
             },
             {
-              "type": "integer",
+              "type": "integer or null",
               "name": "number",
               "description": "<p>The number uniquely identifying the exemption request within it's repository.</p>"
             },
@@ -1449,7 +1426,9 @@
               "description": "<p>The type of request.</p>",
               "enum": [
                 "push_ruleset_bypass",
-                "secret_scanning"
+                "secret_scanning",
+                "secret_scanning_closure",
+                "code_scanning_alert_dismissal"
               ]
             },
             {
@@ -1481,32 +1460,7 @@
             {
               "type": "object or null",
               "name": "metadata",
-              "description": "<p>Metadata about the exemption request.</p>",
-              "childParamsGroups": [
-                {
-                  "type": "object",
-                  "name": "Secret Scanning Push Protection Exemption Request Metadata",
-                  "description": "<p>Metadata for a secret scanning push protection exemption request.</p>",
-                  "childParamsGroups": [
-                    {
-                      "type": "string",
-                      "name": "label",
-                      "description": "<p>The label for the secret type</p>"
-                    },
-                    {
-                      "type": "string",
-                      "name": "reason",
-                      "description": "<p>The reason for the exemption request</p>",
-                      "enum": [
-                        "fixed_later",
-                        "false_positive",
-                        "tests"
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "oneOfObject": true
+              "description": "<p>Metadata about the exemption request.</p>"
             },
             {
               "type": "string",
@@ -1640,7 +1594,7 @@
               "description": "<p>The ID of the exemption request.</p>"
             },
             {
-              "type": "integer",
+              "type": "integer or null",
               "name": "number",
               "description": "<p>The number uniquely identifying the exemption request within it's repository.</p>"
             },
@@ -1665,7 +1619,9 @@
               "description": "<p>The type of request.</p>",
               "enum": [
                 "push_ruleset_bypass",
-                "secret_scanning"
+                "secret_scanning",
+                "secret_scanning_closure",
+                "code_scanning_alert_dismissal"
               ]
             },
             {
@@ -1697,32 +1653,7 @@
             {
               "type": "object or null",
               "name": "metadata",
-              "description": "<p>Metadata about the exemption request.</p>",
-              "childParamsGroups": [
-                {
-                  "type": "object",
-                  "name": "Secret Scanning Push Protection Exemption Request Metadata",
-                  "description": "<p>Metadata for a secret scanning push protection exemption request.</p>",
-                  "childParamsGroups": [
-                    {
-                      "type": "string",
-                      "name": "label",
-                      "description": "<p>The label for the secret type</p>"
-                    },
-                    {
-                      "type": "string",
-                      "name": "reason",
-                      "description": "<p>The reason for the exemption request</p>",
-                      "enum": [
-                        "fixed_later",
-                        "false_positive",
-                        "tests"
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "oneOfObject": true
+              "description": "<p>Metadata about the exemption request.</p>"
             },
             {
               "type": "string",
@@ -1856,7 +1787,7 @@
               "description": "<p>The ID of the exemption request.</p>"
             },
             {
-              "type": "integer",
+              "type": "integer or null",
               "name": "number",
               "description": "<p>The number uniquely identifying the exemption request within it's repository.</p>"
             },
@@ -1881,7 +1812,9 @@
               "description": "<p>The type of request.</p>",
               "enum": [
                 "push_ruleset_bypass",
-                "secret_scanning"
+                "secret_scanning",
+                "secret_scanning_closure",
+                "code_scanning_alert_dismissal"
               ]
             },
             {
@@ -1913,32 +1846,7 @@
             {
               "type": "object or null",
               "name": "metadata",
-              "description": "<p>Metadata about the exemption request.</p>",
-              "childParamsGroups": [
-                {
-                  "type": "object",
-                  "name": "Secret Scanning Push Protection Exemption Request Metadata",
-                  "description": "<p>Metadata for a secret scanning push protection exemption request.</p>",
-                  "childParamsGroups": [
-                    {
-                      "type": "string",
-                      "name": "label",
-                      "description": "<p>The label for the secret type</p>"
-                    },
-                    {
-                      "type": "string",
-                      "name": "reason",
-                      "description": "<p>The reason for the exemption request</p>",
-                      "enum": [
-                        "fixed_later",
-                        "false_positive",
-                        "tests"
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "oneOfObject": true
+              "description": "<p>Metadata about the exemption request.</p>"
             },
             {
               "type": "string",
@@ -2116,7 +2024,7 @@
               "description": "<p>The ID of the exemption request.</p>"
             },
             {
-              "type": "integer",
+              "type": "integer or null",
               "name": "number",
               "description": "<p>The number uniquely identifying the exemption request within it's repository.</p>"
             },
@@ -2141,7 +2049,9 @@
               "description": "<p>The type of request.</p>",
               "enum": [
                 "push_ruleset_bypass",
-                "secret_scanning"
+                "secret_scanning",
+                "secret_scanning_closure",
+                "code_scanning_alert_dismissal"
               ]
             },
             {
@@ -2173,32 +2083,7 @@
             {
               "type": "object or null",
               "name": "metadata",
-              "description": "<p>Metadata about the exemption request.</p>",
-              "childParamsGroups": [
-                {
-                  "type": "object",
-                  "name": "Secret Scanning Push Protection Exemption Request Metadata",
-                  "description": "<p>Metadata for a secret scanning push protection exemption request.</p>",
-                  "childParamsGroups": [
-                    {
-                      "type": "string",
-                      "name": "label",
-                      "description": "<p>The label for the secret type</p>"
-                    },
-                    {
-                      "type": "string",
-                      "name": "reason",
-                      "description": "<p>The reason for the exemption request</p>",
-                      "enum": [
-                        "fixed_later",
-                        "false_positive",
-                        "tests"
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "oneOfObject": true
+              "description": "<p>Metadata about the exemption request.</p>"
             },
             {
               "type": "string",
@@ -51188,6 +51073,68 @@
               "isRequired": true
             },
             {
+              "type": "object or null",
+              "name": "type",
+              "description": "<p>The type of issue.</p>",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "id",
+                  "description": "<p>The unique identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "<p>The node identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "name",
+                  "description": "<p>The name of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "description",
+                  "description": "<p>The description of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "color",
+                  "description": "<p>The color of the issue type.</p>",
+                  "enum": [
+                    "gray",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "orange",
+                    "red",
+                    "pink",
+                    "purple",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "<p>The time the issue type created.</p>"
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "<p>The time the issue type last updated.</p>"
+                },
+                {
+                  "type": "boolean",
+                  "name": "is_enabled",
+                  "description": "<p>The enabled state of the issue type.</p>"
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "updated_at",
               "description": "",
@@ -52470,6 +52417,68 @@
               "name": "title",
               "description": "<p>Title of the issue</p>",
               "isRequired": true
+            },
+            {
+              "type": "object or null",
+              "name": "type",
+              "description": "<p>The type of issue.</p>",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "id",
+                  "description": "<p>The unique identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "<p>The node identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "name",
+                  "description": "<p>The name of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "description",
+                  "description": "<p>The description of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "color",
+                  "description": "<p>The color of the issue type.</p>",
+                  "enum": [
+                    "gray",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "orange",
+                    "red",
+                    "pink",
+                    "purple",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "<p>The time the issue type created.</p>"
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "<p>The time the issue type last updated.</p>"
+                },
+                {
+                  "type": "boolean",
+                  "name": "is_enabled",
+                  "description": "<p>The enabled state of the issue type.</p>"
+                }
+              ]
             },
             {
               "type": "string",
@@ -53776,6 +53785,68 @@
               "name": "title",
               "description": "<p>Title of the issue</p>",
               "isRequired": true
+            },
+            {
+              "type": "object or null",
+              "name": "type",
+              "description": "<p>The type of issue.</p>",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "id",
+                  "description": "<p>The unique identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "<p>The node identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "name",
+                  "description": "<p>The name of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "description",
+                  "description": "<p>The description of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "color",
+                  "description": "<p>The color of the issue type.</p>",
+                  "enum": [
+                    "gray",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "orange",
+                    "red",
+                    "pink",
+                    "purple",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "<p>The time the issue type created.</p>"
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "<p>The time the issue type last updated.</p>"
+                },
+                {
+                  "type": "boolean",
+                  "name": "is_enabled",
+                  "description": "<p>The enabled state of the issue type.</p>"
+                }
+              ]
             },
             {
               "type": "string",
@@ -55295,6 +55366,68 @@
               "isRequired": true
             },
             {
+              "type": "object or null",
+              "name": "type",
+              "description": "<p>The type of issue.</p>",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "id",
+                  "description": "<p>The unique identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "<p>The node identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "name",
+                  "description": "<p>The name of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "description",
+                  "description": "<p>The description of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "color",
+                  "description": "<p>The color of the issue type.</p>",
+                  "enum": [
+                    "gray",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "orange",
+                    "red",
+                    "pink",
+                    "purple",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "<p>The time the issue type created.</p>"
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "<p>The time the issue type last updated.</p>"
+                },
+                {
+                  "type": "boolean",
+                  "name": "is_enabled",
+                  "description": "<p>The enabled state of the issue type.</p>"
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "updated_at",
               "description": "",
@@ -56012,6 +56145,68 @@
               "name": "title",
               "description": "<p>Title of the issue</p>",
               "isRequired": true
+            },
+            {
+              "type": "object or null",
+              "name": "type",
+              "description": "<p>The type of issue.</p>",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "id",
+                  "description": "<p>The unique identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "<p>The node identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "name",
+                  "description": "<p>The name of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "description",
+                  "description": "<p>The description of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "color",
+                  "description": "<p>The color of the issue type.</p>",
+                  "enum": [
+                    "gray",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "orange",
+                    "red",
+                    "pink",
+                    "purple",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "<p>The time the issue type created.</p>"
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "<p>The time the issue type last updated.</p>"
+                },
+                {
+                  "type": "boolean",
+                  "name": "is_enabled",
+                  "description": "<p>The enabled state of the issue type.</p>"
+                }
+              ]
             },
             {
               "type": "string",
@@ -57401,6 +57596,68 @@
               "isRequired": true
             },
             {
+              "type": "object or null",
+              "name": "type",
+              "description": "<p>The type of issue.</p>",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "id",
+                  "description": "<p>The unique identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "<p>The node identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "name",
+                  "description": "<p>The name of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "description",
+                  "description": "<p>The description of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "color",
+                  "description": "<p>The color of the issue type.</p>",
+                  "enum": [
+                    "gray",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "orange",
+                    "red",
+                    "pink",
+                    "purple",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "<p>The time the issue type created.</p>"
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "<p>The time the issue type last updated.</p>"
+                },
+                {
+                  "type": "boolean",
+                  "name": "is_enabled",
+                  "description": "<p>The enabled state of the issue type.</p>"
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "updated_at",
               "description": "",
@@ -58739,6 +58996,68 @@
               "name": "title",
               "description": "<p>Title of the issue</p>",
               "isRequired": true
+            },
+            {
+              "type": "object or null",
+              "name": "type",
+              "description": "<p>The type of issue.</p>",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "id",
+                  "description": "<p>The unique identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "<p>The node identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "name",
+                  "description": "<p>The name of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "description",
+                  "description": "<p>The description of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "color",
+                  "description": "<p>The color of the issue type.</p>",
+                  "enum": [
+                    "gray",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "orange",
+                    "red",
+                    "pink",
+                    "purple",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "<p>The time the issue type created.</p>"
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "<p>The time the issue type last updated.</p>"
+                },
+                {
+                  "type": "boolean",
+                  "name": "is_enabled",
+                  "description": "<p>The enabled state of the issue type.</p>"
+                }
+              ]
             },
             {
               "type": "string",
@@ -60388,6 +60707,68 @@
               "description": ""
             },
             {
+              "type": "object or null",
+              "name": "type",
+              "description": "<p>The type of issue.</p>",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "id",
+                  "description": "<p>The unique identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "<p>The node identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "name",
+                  "description": "<p>The name of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "description",
+                  "description": "<p>The description of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "color",
+                  "description": "<p>The color of the issue type.</p>",
+                  "enum": [
+                    "gray",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "orange",
+                    "red",
+                    "pink",
+                    "purple",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "<p>The time the issue type created.</p>"
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "<p>The time the issue type last updated.</p>"
+                },
+                {
+                  "type": "boolean",
+                  "name": "is_enabled",
+                  "description": "<p>The enabled state of the issue type.</p>"
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "title",
               "description": "<p>Title of the issue</p>",
@@ -61828,6 +62209,68 @@
               "description": ""
             },
             {
+              "type": "object or null",
+              "name": "type",
+              "description": "<p>The type of issue.</p>",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "id",
+                  "description": "<p>The unique identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "<p>The node identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "name",
+                  "description": "<p>The name of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "description",
+                  "description": "<p>The description of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "color",
+                  "description": "<p>The color of the issue type.</p>",
+                  "enum": [
+                    "gray",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "orange",
+                    "red",
+                    "pink",
+                    "purple",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "<p>The time the issue type created.</p>"
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "<p>The time the issue type last updated.</p>"
+                },
+                {
+                  "type": "boolean",
+                  "name": "is_enabled",
+                  "description": "<p>The enabled state of the issue type.</p>"
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "title",
               "description": "<p>Title of the issue</p>",
@@ -63225,6 +63668,68 @@
               "description": ""
             },
             {
+              "type": "object or null",
+              "name": "type",
+              "description": "<p>The type of issue.</p>",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "id",
+                  "description": "<p>The unique identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "<p>The node identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "name",
+                  "description": "<p>The name of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "description",
+                  "description": "<p>The description of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "color",
+                  "description": "<p>The color of the issue type.</p>",
+                  "enum": [
+                    "gray",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "orange",
+                    "red",
+                    "pink",
+                    "purple",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "<p>The time the issue type created.</p>"
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "<p>The time the issue type last updated.</p>"
+                },
+                {
+                  "type": "boolean",
+                  "name": "is_enabled",
+                  "description": "<p>The enabled state of the issue type.</p>"
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "title",
               "description": "<p>Title of the issue</p>",
@@ -64570,6 +65075,68 @@
               "isRequired": true
             },
             {
+              "type": "object or null",
+              "name": "type",
+              "description": "<p>The type of issue.</p>",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "id",
+                  "description": "<p>The unique identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "<p>The node identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "name",
+                  "description": "<p>The name of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "description",
+                  "description": "<p>The description of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "color",
+                  "description": "<p>The color of the issue type.</p>",
+                  "enum": [
+                    "gray",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "orange",
+                    "red",
+                    "pink",
+                    "purple",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "<p>The time the issue type created.</p>"
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "<p>The time the issue type last updated.</p>"
+                },
+                {
+                  "type": "boolean",
+                  "name": "is_enabled",
+                  "description": "<p>The enabled state of the issue type.</p>"
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "updated_at",
               "description": "",
@@ -65000,7 +65567,6 @@
                   "type": "string or null",
                   "name": "active_lock_reason",
                   "description": "",
-                  "isRequired": true,
                   "enum": [
                     "resolved",
                     "off-topic",
@@ -65136,14 +65702,12 @@
                 {
                   "type": "array of object,nulls",
                   "name": "assignees",
-                  "description": "",
-                  "isRequired": true
+                  "description": ""
                 },
                 {
                   "type": "string",
                   "name": "author_association",
                   "description": "<p>How the author is associated with the repository.</p>",
-                  "isRequired": true,
                   "enum": [
                     "COLLABORATOR",
                     "CONTRIBUTOR",
@@ -65158,32 +65722,27 @@
                 {
                   "type": "string or null",
                   "name": "body",
-                  "description": "<p>Contents of the issue</p>",
-                  "isRequired": true
+                  "description": "<p>Contents of the issue</p>"
                 },
                 {
                   "type": "string or null",
                   "name": "closed_at",
-                  "description": "",
-                  "isRequired": true
+                  "description": ""
                 },
                 {
                   "type": "integer",
                   "name": "comments",
-                  "description": "",
-                  "isRequired": true
+                  "description": ""
                 },
                 {
                   "type": "string",
                   "name": "comments_url",
-                  "description": "",
-                  "isRequired": true
+                  "description": ""
                 },
                 {
                   "type": "string",
                   "name": "created_at",
-                  "description": "",
-                  "isRequired": true
+                  "description": ""
                 },
                 {
                   "type": "boolean",
@@ -65193,14 +65752,12 @@
                 {
                   "type": "string",
                   "name": "events_url",
-                  "description": "",
-                  "isRequired": true
+                  "description": ""
                 },
                 {
                   "type": "string",
                   "name": "html_url",
-                  "description": "",
-                  "isRequired": true
+                  "description": ""
                 },
                 {
                   "type": "integer",
@@ -65260,8 +65817,7 @@
                 {
                   "type": "string",
                   "name": "labels_url",
-                  "description": "",
-                  "isRequired": true
+                  "description": ""
                 },
                 {
                   "type": "boolean",
@@ -65272,7 +65828,6 @@
                   "type": "object or null",
                   "name": "milestone",
                   "description": "<p>A collection of related issues and pull requests.</p>",
-                  "isRequired": true,
                   "childParamsGroups": [
                     {
                       "type": "string or null",
@@ -65498,8 +66053,7 @@
                 {
                   "type": "string",
                   "name": "node_id",
-                  "description": "",
-                  "isRequired": true
+                  "description": ""
                 },
                 {
                   "type": "integer",
@@ -66055,7 +66609,6 @@
                   "type": "object",
                   "name": "reactions",
                   "description": "",
-                  "isRequired": true,
                   "childParamsGroups": [
                     {
                       "type": "integer",
@@ -66122,8 +66675,7 @@
                 {
                   "type": "string",
                   "name": "repository_url",
-                  "description": "",
-                  "isRequired": true
+                  "description": ""
                 },
                 {
                   "type": "object",
@@ -66172,26 +66724,22 @@
                 {
                   "type": "string",
                   "name": "title",
-                  "description": "<p>Title of the issue</p>",
-                  "isRequired": true
+                  "description": "<p>Title of the issue</p>"
                 },
                 {
                   "type": "string",
                   "name": "updated_at",
-                  "description": "",
-                  "isRequired": true
+                  "description": ""
                 },
                 {
                   "type": "string",
                   "name": "url",
-                  "description": "<p>URL for the issue</p>",
-                  "isRequired": true
+                  "description": "<p>URL for the issue</p>"
                 },
                 {
                   "type": "object or null",
                   "name": "user",
                   "description": "",
-                  "isRequired": true,
                   "childParamsGroups": [
                     {
                       "type": "string",
@@ -66309,6 +66857,68 @@
                       "type": "string",
                       "name": "user_view_type",
                       "description": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "object or null",
+                  "name": "type",
+                  "description": "<p>The type of issue.</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "<p>The unique identifier of the issue type.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "node_id",
+                      "description": "<p>The node identifier of the issue type.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "name",
+                      "description": "<p>The name of the issue type.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string or null",
+                      "name": "description",
+                      "description": "<p>The description of the issue type.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string or null",
+                      "name": "color",
+                      "description": "<p>The color of the issue type.</p>",
+                      "enum": [
+                        "gray",
+                        "blue",
+                        "green",
+                        "yellow",
+                        "orange",
+                        "red",
+                        "pink",
+                        "purple",
+                        null
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "name": "created_at",
+                      "description": "<p>The time the issue type created.</p>"
+                    },
+                    {
+                      "type": "string",
+                      "name": "updated_at",
+                      "description": "<p>The time the issue type last updated.</p>"
+                    },
+                    {
+                      "type": "boolean",
+                      "name": "is_enabled",
+                      "description": "<p>The enabled state of the issue type.</p>"
                     }
                   ]
                 }
@@ -68257,6 +68867,68 @@
               "isRequired": true
             },
             {
+              "type": "object or null",
+              "name": "type",
+              "description": "<p>The type of issue.</p>",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "id",
+                  "description": "<p>The unique identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "<p>The node identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "name",
+                  "description": "<p>The name of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "description",
+                  "description": "<p>The description of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "color",
+                  "description": "<p>The color of the issue type.</p>",
+                  "enum": [
+                    "gray",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "orange",
+                    "red",
+                    "pink",
+                    "purple",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "<p>The time the issue type created.</p>"
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "<p>The time the issue type last updated.</p>"
+                },
+                {
+                  "type": "boolean",
+                  "name": "is_enabled",
+                  "description": "<p>The enabled state of the issue type.</p>"
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "updated_at",
               "description": "",
@@ -69641,6 +70313,68 @@
               "name": "title",
               "description": "<p>Title of the issue</p>",
               "isRequired": true
+            },
+            {
+              "type": "object or null",
+              "name": "type",
+              "description": "<p>The type of issue.</p>",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "id",
+                  "description": "<p>The unique identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "<p>The node identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "name",
+                  "description": "<p>The name of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "description",
+                  "description": "<p>The description of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "color",
+                  "description": "<p>The color of the issue type.</p>",
+                  "enum": [
+                    "gray",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "orange",
+                    "red",
+                    "pink",
+                    "purple",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "<p>The time the issue type created.</p>"
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "<p>The time the issue type last updated.</p>"
+                },
+                {
+                  "type": "boolean",
+                  "name": "is_enabled",
+                  "description": "<p>The enabled state of the issue type.</p>"
+                }
+              ]
             },
             {
               "type": "string",
@@ -71120,6 +71854,68 @@
                   "description": ""
                 }
               ]
+            },
+            {
+              "type": "object or null",
+              "name": "type",
+              "description": "<p>The type of issue.</p>",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "id",
+                  "description": "<p>The unique identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "<p>The node identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "name",
+                  "description": "<p>The name of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "description",
+                  "description": "<p>The description of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "color",
+                  "description": "<p>The color of the issue type.</p>",
+                  "enum": [
+                    "gray",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "orange",
+                    "red",
+                    "pink",
+                    "purple",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "<p>The time the issue type created.</p>"
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "<p>The time the issue type last updated.</p>"
+                },
+                {
+                  "type": "boolean",
+                  "name": "is_enabled",
+                  "description": "<p>The enabled state of the issue type.</p>"
+                }
+              ]
             }
           ]
         },
@@ -72361,6 +73157,68 @@
                   "name": "title",
                   "description": "<p>Title of the issue</p>",
                   "isRequired": true
+                },
+                {
+                  "type": "object or null",
+                  "name": "type",
+                  "description": "<p>The type of issue.</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "<p>The unique identifier of the issue type.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "node_id",
+                      "description": "<p>The node identifier of the issue type.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "name",
+                      "description": "<p>The name of the issue type.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string or null",
+                      "name": "description",
+                      "description": "<p>The description of the issue type.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string or null",
+                      "name": "color",
+                      "description": "<p>The color of the issue type.</p>",
+                      "enum": [
+                        "gray",
+                        "blue",
+                        "green",
+                        "yellow",
+                        "orange",
+                        "red",
+                        "pink",
+                        "purple",
+                        null
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "name": "created_at",
+                      "description": "<p>The time the issue type created.</p>"
+                    },
+                    {
+                      "type": "string",
+                      "name": "updated_at",
+                      "description": "<p>The time the issue type last updated.</p>"
+                    },
+                    {
+                      "type": "boolean",
+                      "name": "is_enabled",
+                      "description": "<p>The enabled state of the issue type.</p>"
+                    }
+                  ]
                 },
                 {
                   "type": "string",
@@ -74444,6 +75302,68 @@
               "isRequired": true
             },
             {
+              "type": "object or null",
+              "name": "type",
+              "description": "<p>The type of issue.</p>",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "id",
+                  "description": "<p>The unique identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "<p>The node identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "name",
+                  "description": "<p>The name of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "description",
+                  "description": "<p>The description of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "color",
+                  "description": "<p>The color of the issue type.</p>",
+                  "enum": [
+                    "gray",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "orange",
+                    "red",
+                    "pink",
+                    "purple",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "<p>The time the issue type created.</p>"
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "<p>The time the issue type last updated.</p>"
+                },
+                {
+                  "type": "boolean",
+                  "name": "is_enabled",
+                  "description": "<p>The enabled state of the issue type.</p>"
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "updated_at",
               "description": "",
@@ -75959,6 +76879,68 @@
               "isRequired": true
             },
             {
+              "type": "object or null",
+              "name": "type",
+              "description": "<p>The type of issue.</p>",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "id",
+                  "description": "<p>The unique identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "<p>The node identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "name",
+                  "description": "<p>The name of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "description",
+                  "description": "<p>The description of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "color",
+                  "description": "<p>The color of the issue type.</p>",
+                  "enum": [
+                    "gray",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "orange",
+                    "red",
+                    "pink",
+                    "purple",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "<p>The time the issue type created.</p>"
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "<p>The time the issue type last updated.</p>"
+                },
+                {
+                  "type": "boolean",
+                  "name": "is_enabled",
+                  "description": "<p>The enabled state of the issue type.</p>"
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "updated_at",
               "description": "",
@@ -77347,6 +78329,68 @@
               "name": "title",
               "description": "<p>Title of the issue</p>",
               "isRequired": true
+            },
+            {
+              "type": "object or null",
+              "name": "type",
+              "description": "<p>The type of issue.</p>",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "id",
+                  "description": "<p>The unique identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "<p>The node identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "name",
+                  "description": "<p>The name of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "description",
+                  "description": "<p>The description of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "color",
+                  "description": "<p>The color of the issue type.</p>",
+                  "enum": [
+                    "gray",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "orange",
+                    "red",
+                    "pink",
+                    "purple",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "<p>The time the issue type created.</p>"
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "<p>The time the issue type last updated.</p>"
+                },
+                {
+                  "type": "boolean",
+                  "name": "is_enabled",
+                  "description": "<p>The enabled state of the issue type.</p>"
+                }
+              ]
             },
             {
               "type": "string",
@@ -78746,6 +79790,68 @@
               "isRequired": true
             },
             {
+              "type": "object or null",
+              "name": "type",
+              "description": "<p>The type of issue.</p>",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "id",
+                  "description": "<p>The unique identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "<p>The node identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "name",
+                  "description": "<p>The name of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "description",
+                  "description": "<p>The description of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "color",
+                  "description": "<p>The color of the issue type.</p>",
+                  "enum": [
+                    "gray",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "orange",
+                    "red",
+                    "pink",
+                    "purple",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "<p>The time the issue type created.</p>"
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "<p>The time the issue type last updated.</p>"
+                },
+                {
+                  "type": "boolean",
+                  "name": "is_enabled",
+                  "description": "<p>The enabled state of the issue type.</p>"
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "updated_at",
               "description": "",
@@ -80130,6 +81236,68 @@
               "name": "title",
               "description": "<p>Title of the issue</p>",
               "isRequired": true
+            },
+            {
+              "type": "object or null",
+              "name": "type",
+              "description": "<p>The type of issue.</p>",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "id",
+                  "description": "<p>The unique identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "<p>The node identifier of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "name",
+                  "description": "<p>The name of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "description",
+                  "description": "<p>The description of the issue type.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "color",
+                  "description": "<p>The color of the issue type.</p>",
+                  "enum": [
+                    "gray",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "orange",
+                    "red",
+                    "pink",
+                    "purple",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "<p>The time the issue type created.</p>"
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "<p>The time the issue type last updated.</p>"
+                },
+                {
+                  "type": "boolean",
+                  "name": "is_enabled",
+                  "description": "<p>The enabled state of the issue type.</p>"
+                }
+              ]
             },
             {
               "type": "string",
@@ -87249,7 +88417,7 @@
   "personal_access_token_request": {
     "approved": {
       "descriptionHtml": "<p>A fine-grained personal access token request was approved.</p>",
-      "summaryHtml": "<p>This event occurs when there is activity relating to a request for a fine-grained personal access token to access resources that belong to a resource owner that requires approval for token access. For more information, see \"<a href=\"https://docs.github.com/enterprise-server@3.15/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token\">Creating a personal access token</a>.\"</p>\n<p>To subscribe to this event, a GitHub App must have at least read-level access for the \"Personal access token requests\" organization permission.</p>\n<div class=\"ghd-alert ghd-alert-accent\"><p class=\"ghd-alert-title\"><svg version=\"1.1\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" class=\"octicon mr-2\" aria-hidden><path d=\"M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z\"></path></svg>Note</p>\n<p>\nFine-grained PATs are in public preview. Related APIs, events, and functionality are subject to change.</p>\n</div>",
+      "summaryHtml": "<p>This event occurs when there is activity relating to a request for a fine-grained personal access token to access resources that belong to a resource owner that requires approval for token access. For more information, see \"<a href=\"https://docs.github.com/enterprise-server@3.15/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token\">Creating a personal access token</a>.\"</p>\n<p>To subscribe to this event, a GitHub App must have at least read-level access for the \"Personal access token requests\" organization permission.</p>",
       "bodyParameters": [
         {
           "type": "string",
@@ -87606,14 +88774,15 @@
         }
       ],
       "availability": [
-        "app"
+        "app",
+        "organization"
       ],
       "action": "approved",
       "category": "personal_access_token_request"
     },
     "cancelled": {
       "descriptionHtml": "<p>A fine-grained personal access token request was cancelled by the requester.</p>",
-      "summaryHtml": "<p>This event occurs when there is activity relating to a request for a fine-grained personal access token to access resources that belong to a resource owner that requires approval for token access. For more information, see \"<a href=\"https://docs.github.com/enterprise-server@3.15/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token\">Creating a personal access token</a>.\"</p>\n<p>To subscribe to this event, a GitHub App must have at least read-level access for the \"Personal access token requests\" organization permission.</p>\n<div class=\"ghd-alert ghd-alert-accent\"><p class=\"ghd-alert-title\"><svg version=\"1.1\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" class=\"octicon mr-2\" aria-hidden><path d=\"M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z\"></path></svg>Note</p>\n<p>\nFine-grained PATs are in public preview. Related APIs, events, and functionality are subject to change.</p>\n</div>",
+      "summaryHtml": "<p>This event occurs when there is activity relating to a request for a fine-grained personal access token to access resources that belong to a resource owner that requires approval for token access. For more information, see \"<a href=\"https://docs.github.com/enterprise-server@3.15/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token\">Creating a personal access token</a>.\"</p>\n<p>To subscribe to this event, a GitHub App must have at least read-level access for the \"Personal access token requests\" organization permission.</p>",
       "bodyParameters": [
         {
           "type": "string",
@@ -87970,14 +89139,15 @@
         }
       ],
       "availability": [
-        "app"
+        "app",
+        "organization"
       ],
       "action": "cancelled",
       "category": "personal_access_token_request"
     },
     "created": {
       "descriptionHtml": "<p>A fine-grained personal access token request was created.</p>",
-      "summaryHtml": "<p>This event occurs when there is activity relating to a request for a fine-grained personal access token to access resources that belong to a resource owner that requires approval for token access. For more information, see \"<a href=\"https://docs.github.com/enterprise-server@3.15/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token\">Creating a personal access token</a>.\"</p>\n<p>To subscribe to this event, a GitHub App must have at least read-level access for the \"Personal access token requests\" organization permission.</p>\n<div class=\"ghd-alert ghd-alert-accent\"><p class=\"ghd-alert-title\"><svg version=\"1.1\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" class=\"octicon mr-2\" aria-hidden><path d=\"M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z\"></path></svg>Note</p>\n<p>\nFine-grained PATs are in public preview. Related APIs, events, and functionality are subject to change.</p>\n</div>",
+      "summaryHtml": "<p>This event occurs when there is activity relating to a request for a fine-grained personal access token to access resources that belong to a resource owner that requires approval for token access. For more information, see \"<a href=\"https://docs.github.com/enterprise-server@3.15/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token\">Creating a personal access token</a>.\"</p>\n<p>To subscribe to this event, a GitHub App must have at least read-level access for the \"Personal access token requests\" organization permission.</p>",
       "bodyParameters": [
         {
           "type": "string",
@@ -88333,14 +89503,15 @@
         }
       ],
       "availability": [
-        "app"
+        "app",
+        "organization"
       ],
       "action": "created",
       "category": "personal_access_token_request"
     },
     "denied": {
       "descriptionHtml": "<p>A fine-grained personal access token request was denied.</p>",
-      "summaryHtml": "<p>This event occurs when there is activity relating to a request for a fine-grained personal access token to access resources that belong to a resource owner that requires approval for token access. For more information, see \"<a href=\"https://docs.github.com/enterprise-server@3.15/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token\">Creating a personal access token</a>.\"</p>\n<p>To subscribe to this event, a GitHub App must have at least read-level access for the \"Personal access token requests\" organization permission.</p>\n<div class=\"ghd-alert ghd-alert-accent\"><p class=\"ghd-alert-title\"><svg version=\"1.1\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" class=\"octicon mr-2\" aria-hidden><path d=\"M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z\"></path></svg>Note</p>\n<p>\nFine-grained PATs are in public preview. Related APIs, events, and functionality are subject to change.</p>\n</div>",
+      "summaryHtml": "<p>This event occurs when there is activity relating to a request for a fine-grained personal access token to access resources that belong to a resource owner that requires approval for token access. For more information, see \"<a href=\"https://docs.github.com/enterprise-server@3.15/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token\">Creating a personal access token</a>.\"</p>\n<p>To subscribe to this event, a GitHub App must have at least read-level access for the \"Personal access token requests\" organization permission.</p>",
       "bodyParameters": [
         {
           "type": "string",
@@ -88697,7 +89868,8 @@
         }
       ],
       "availability": [
-        "app"
+        "app",
+        "organization"
       ],
       "action": "denied",
       "category": "personal_access_token_request"
@@ -192759,6 +193931,19 @@
             },
             {
               "type": "object",
+              "name": "tag_name",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "string",
+                  "name": "from",
+                  "description": "<p>The previous version of the tag_name if the action was <code>edited</code>.</p>",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
+              "type": "object",
               "name": "make_latest",
               "description": "",
               "childParamsGroups": [
@@ -196500,9 +197685,9 @@
                       "description": "",
                       "childParamsGroups": [
                         {
-                          "type": "array of strings",
-                          "name": "allowed_merge_methods",
-                          "description": "<p>When merging pull requests, you can allow any combination of merge commits, squashing, or rebasing. At least one option must be enabled.</p>"
+                          "type": "boolean",
+                          "name": "automatic_copilot_code_review_enabled",
+                          "description": "<p>Automatically request review from Copilot for new pull requests, if the author has access to Copilot code review.</p>"
                         },
                         {
                           "type": "boolean",
@@ -197470,9 +198655,9 @@
                       "description": "",
                       "childParamsGroups": [
                         {
-                          "type": "array of strings",
-                          "name": "allowed_merge_methods",
-                          "description": "<p>When merging pull requests, you can allow any combination of merge commits, squashing, or rebasing. At least one option must be enabled.</p>"
+                          "type": "boolean",
+                          "name": "automatic_copilot_code_review_enabled",
+                          "description": "<p>Automatically request review from Copilot for new pull requests, if the author has access to Copilot code review.</p>"
                         },
                         {
                           "type": "boolean",
@@ -198440,9 +199625,9 @@
                       "description": "",
                       "childParamsGroups": [
                         {
-                          "type": "array of strings",
-                          "name": "allowed_merge_methods",
-                          "description": "<p>When merging pull requests, you can allow any combination of merge commits, squashing, or rebasing. At least one option must be enabled.</p>"
+                          "type": "boolean",
+                          "name": "automatic_copilot_code_review_enabled",
+                          "description": "<p>Automatically request review from Copilot for new pull requests, if the author has access to Copilot code review.</p>"
                         },
                         {
                           "type": "boolean",
@@ -199385,9 +200570,9 @@
                           "description": "",
                           "childParamsGroups": [
                             {
-                              "type": "array of strings",
-                              "name": "allowed_merge_methods",
-                              "description": "<p>When merging pull requests, you can allow any combination of merge commits, squashing, or rebasing. At least one option must be enabled.</p>"
+                              "type": "boolean",
+                              "name": "automatic_copilot_code_review_enabled",
+                              "description": "<p>Automatically request review from Copilot for new pull requests, if the author has access to Copilot code review.</p>"
                             },
                             {
                               "type": "boolean",
@@ -200142,9 +201327,9 @@
                           "description": "",
                           "childParamsGroups": [
                             {
-                              "type": "array of strings",
-                              "name": "allowed_merge_methods",
-                              "description": "<p>When merging pull requests, you can allow any combination of merge commits, squashing, or rebasing. At least one option must be enabled.</p>"
+                              "type": "boolean",
+                              "name": "automatic_copilot_code_review_enabled",
+                              "description": "<p>Automatically request review from Copilot for new pull requests, if the author has access to Copilot code review.</p>"
                             },
                             {
                               "type": "boolean",
@@ -200904,9 +202089,9 @@
                               "description": "",
                               "childParamsGroups": [
                                 {
-                                  "type": "array of strings",
-                                  "name": "allowed_merge_methods",
-                                  "description": "<p>When merging pull requests, you can allow any combination of merge commits, squashing, or rebasing. At least one option must be enabled.</p>"
+                                  "type": "boolean",
+                                  "name": "automatic_copilot_code_review_enabled",
+                                  "description": "<p>Automatically request review from Copilot for new pull requests, if the author has access to Copilot code review.</p>"
                                 },
                                 {
                                   "type": "boolean",
